@@ -49,7 +49,3 @@ jobs:
       - name: Push Docker image to Amazon ECR
         run: |
           docker push $IMAGE_URI
-
-      # OPTIONAL: Print the image URI
-      - name: Show Image URI
-        run: echo "Docker Image URI: $IMAGE_URI"
