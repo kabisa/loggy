@@ -32,7 +32,7 @@ jobs:
       - name: Define Image Variables
         id: vars
         run: |
-          IMAGE_URI="${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/loggy:latest"
+          IMAGE_URI="${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/loggy_repo:latest"
           echo "IMAGE_URI=$IMAGE_URI" >> $GITHUB_ENV
 
       # Step 5: Build the Docker image
